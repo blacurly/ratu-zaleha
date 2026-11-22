@@ -101,6 +101,7 @@ Skrip lain: `npm run build` (build produksi), `npm run start` (menjalankan hasil
 - Satu lamaran per pengguna per lowongan (`UNIQUE (user_id, job_id)`), dan perubahan status lamaran otomatis tercatat lewat trigger.
 
 ## API
+https://laras-karya.vercel.app/api-docs/index.html
 
 Semua rute di bawah `app/api/` membutuhkan sesi masuk (Supabase Auth). Rute `/api/admin/*` hanya untuk peran admin (401 bila belum masuk, 403 bila bukan admin). Respons berbentuk `{ ok: true, ... }` atau `{ ok: false, error }`.
 
@@ -119,6 +120,7 @@ Semua rute di bawah `app/api/` membutuhkan sesi masuk (Supabase Auth). Rute `/ap
 | `/api/learning-path` | GET, POST | Jalur belajar |
 | `/api/admin/jobs`, `/api/admin/jobs/[id]` | GET, POST / GET, PUT, PATCH, DELETE | Kelola lowongan (admin) |
 | `/api/admin/jobs/options` | GET | Pilihan isian lowongan (admin) |
+
 
 ## Data dan keterbatasan
 
